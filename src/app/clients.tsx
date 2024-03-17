@@ -16,15 +16,14 @@ export function Clients() {
   return (
     <section className="px-8 py-28">
       <div className="container mx-auto text-center">
-        <Typography variant="h1" color="blue-gray" className="mb-8">
+        <p className="mb-4 lg:text-8xl text-5xl ">
           Expertise
-        </Typography>
-        <Typography
-          variant="lead"
+        </p>
+        <p
           className="mb-6 text-gray-600 text-lg md:pr-16   xl:pr-28"
         >
           We are into the manufacturing of all types of water pumps and consumer electrical products.
-        </Typography>
+        </p>
         <div className="flex flex-wrap items-center justify-center gap-x-20 gap-y-10">
           {Expertise.map((item, key) => (
             <div className="flex flex-col gap-4 items-center justify-center" key={key}>
@@ -33,10 +32,10 @@ export function Clients() {
                 alt={item.name}
                 width={768}
                 height={768}
-                className="w-40"
+                className="w-28"
                 src={item.icon}
               />
-              <div className="block antialiased tracking-normal font-sans  font-semibold leading-snug text-blue-gray-900 mb-2 mt-3 w-[120px] flex flex-wrap ">
+              <div className=" antialiased tracking-normal font-sans  font-semibold leading-snug text-blue-gray-900 mb-2 mt-3 w-[120px] flex justify-center flex-wrap ">
                 {item.name}
               </div>
             </div>

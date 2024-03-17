@@ -29,19 +29,19 @@ export function ContactForm() {
       </div>
       <div>
         <Card shadow={true} className="container mx-auto border border-gray/50">
-          <CardBody className="grid grid-cols-1 lg:grid-cols-7 md:gap-10">
-            <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-gray-900">
+          <CardBody className="grid grid-cols-1 lg:grid-cols-7 lg:gap-10 ">
+            <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-blue-500">
               <Typography variant="h4" color="white" className="mb-2">
                 Contact Information
               </Typography>
 
-              <Typography variant="h5" className="mb-2 text-gray-300">
+              <Typography variant="h5" className="mb-2 text-white">
                 FACTORY ADDRESS
               </Typography>
 
               <Typography
                 variant="lead"
-                className="mx-auto mb-8 text-base !text-gray-500"
+                className="mx-auto mb-8 text-base !text-white"
               >
                 SILVER CONSUMER ELECTRICALS PRIVATE LIMITED
                 Survey No. 36-47, Village Haripar (Taravada),
@@ -51,21 +51,21 @@ export function ContactForm() {
               <div className="flex gap-5">
                 <PhoneIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white" className="mb-2">
-                  +1(424) 535 3523
+                  +91 94262 80036
                 </Typography>
               </div>
               <div className="flex my-2 gap-5">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white" className="mb-2">
-                  hello@mail.com
+                  info@hayatpump.com
                 </Typography>
               </div>
-              <div className="flex mb-10 gap-5">
+              {/* <div className="flex mb-10 gap-5">
                 <TicketIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white" className="mb-2">
                   Open Support Ticket
                 </Typography>
-              </div>
+              </div> */}
               <div className="flex items-center gap-5">
                 <IconButton variant="text" color="white">
                   <i className="fa-brands fa-facebook text-lg" />
@@ -78,7 +78,7 @@ export function ContactForm() {
                 </IconButton>
               </div>
             </div>
-            <div className="w-full mt-8 md:mt-0 md:px-10 col-span-4 h-full p-5">
+            <div className="w-full mt-8  md:px-10 col-span-4 h-full p-5 lg:pt-0 pt-5">
               <form action="#">
                 <div className="mb-8 grid gap-4 lg:grid-cols-2">
                   {/* @ts-ignore */}
@@ -143,7 +143,7 @@ export function ContactForm() {
                   }}
                 />
                 <div className="w-full flex justify-end">
-                  <Button className="w-full md:w-fit" color="gray" size="md">
+                  <Button className="w-full md:w-fit" color="blue" size="md">
                     Send message
                   </Button>
                 </div>

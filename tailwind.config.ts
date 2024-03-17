@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 const withMT = require("@material-tailwind/react/utils/withMT");
-
 const config: Config = withMT({
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +7,11 @@ const config: Config = withMT({
   ],
   theme: {},
   plugins: [],
+  extend: {
+    backgroundImage: {
+      'hero': "url('./src/images/featurs/bgImage.jpg')",
+    },
+  }
 });
 
 export default config;

@@ -19,21 +19,21 @@ export function Footer() {
             </a>
             .
           </Typography>
-          <ul className="flex gap-8 items-center">
-            {LINKS.map((link) => (
-              <li key={link}>
-                <Typography
-                  as="a"
-                  href="#"
-                  variant="small"
-                  className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
-                >
-                  {link}
-                </Typography>
-              </li>
-            ))}
-            <Button color="gray">subscribe</Button>
-          </ul>
+          {/* <ul className="flex gap-8 items-center">
+              {LINKS.map((link) => (
+                <li key={link}>
+                  <Typography
+                    as="a"
+                    href="#"
+                    variant="small"
+                    className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
+                  >
+                    {link}
+                  </Typography>
+                </li>
+              ))}
+              <Button color="blue">subscribe</Button>
+            </ul> */}
         </div>
       </div>
     </footer>

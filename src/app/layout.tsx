@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Layout, FixedPlugin } from "@/components";
+import { FirebaseProvider } from '../firebase/firebase';
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -11,9 +12,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js + Tailwind Portfolio Page",
+  title: "Hayat pumps | Home page",
   description:
-    "Introducing Tailwind Portfolio Page, a versatile and stylish portfolio template built on the foundation of Tailwind CSS and Material Tailwind.",
+    "Hayat Pumps & Motors has established itself as a distinguished manufacturer of Premium quality, efficient, reliable and long-lasting pumps and motors for more than 40 years.",
 };
 
 export default function RootLayout({
@@ -32,10 +33,14 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
-        <Layout>
-          {children}
-          <FixedPlugin />
-        </Layout>
+        <div className="" style={{ backgroundImage: "url('/images/featurs/bgImage.jpg')" }}>
+          <Layout>
+            <FirebaseProvider>
+              {children}
+            </FirebaseProvider>
+            <FixedPlugin />
+          </Layout>
+        </div>
       </body>
     </html>
   );
