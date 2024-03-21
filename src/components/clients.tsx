@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import { Expertise } from '../components/ExpertisedData/Expertise'
+import { Expertise } from './ExpertisedData/Expertise'
 // const CLIENTS = [
 //   "coinbase",
 //   "spotify",

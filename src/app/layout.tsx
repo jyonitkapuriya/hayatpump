@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { Layout, FixedPlugin } from "@/components";
+// import { Roboto } from "next/font/google";
+import { Layout } from "@/components";
 import { FirebaseProvider } from '../firebase/firebase';
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
-  display: "swap",
-});
+// const roboto = Roboto({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "700", "900"],
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Hayat pumps | Home page",
@@ -38,7 +38,7 @@ export default function RootLayout({
             <FirebaseProvider>
               {children}
             </FirebaseProvider>
-            <FixedPlugin />
+            {/* <FixedPlugin /> */}
           </Layout>
         </div>
       </body>

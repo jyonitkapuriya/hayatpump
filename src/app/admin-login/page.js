@@ -1,11 +1,10 @@
 "use client"
 import { useEffect, useState } from "react"
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { loginWithPassword } from "../../firebase/config"
 import { useRouter } from "next/navigation";
 import { useFirebase } from "@/firebase/firebase";
 
-export default function Login() {
+const Login = () => {
     const [formData, setFormData] = useState({})
     const { admin, loading } = useFirebase()
     const router = useRouter()
@@ -67,3 +66,5 @@ export default function Login() {
         </section>
     )
 }
+
+export default Login

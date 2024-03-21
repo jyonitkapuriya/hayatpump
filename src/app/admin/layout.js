@@ -3,7 +3,6 @@
 import { useFirebase } from "@/firebase/firebase";
 import { useRouter } from "next/navigation"
 import { useEffect } from "react";
-import ContactForm from "../contact-form";
 import { Footer, Navbar } from "@/components";
 
 

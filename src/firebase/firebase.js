@@ -14,11 +14,13 @@ export const FirebaseProvider = ({ children }) => {
     const auth = useAuth()
 
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
-            setAdmin(firebaseUser);
-            setLoading(false)
-        });
-        return () => unsubscribe();
+        if (typeof window !== 'undefined') {
+            const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+                setAdmin(firebaseUser);
+                setLoading(false)
+            });
+            return () => unsubscribe();
+        }
     }, [auth]);
 
     return (
