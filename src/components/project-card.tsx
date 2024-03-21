@@ -35,7 +35,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           </Typography>
         </a>
 
-        <Button color="gray" size="lg">
+        <Button color="blue" size="lg">
           View
         </Button>
       </CardBody>
